@@ -1,3 +1,71 @@
 body {
-    background-color: azure;
+    font-family: sans-serif;
+}
+
+.form-input {
+    background-color: #ebebeb;
+    width: 100%;
+    height: 64px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+.container {
+    margin: 0 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button {
+    background-color: #78D476;
+    color: white;
+    width: 100%;
+    height: 60px;
+    border: none;
+}
+
+.input-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.input-layout>* {
+    margin: 0;
+}
+
+@media only screen and (min-width: 678px) {
+    .input-layout>button {
+        align-self: flex-end;
+        width: 372px;
+    }
+
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .input-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .input-list > .input-group {
+        flex-basis: calc((100% - 1 * 20px) / 2);
+    }
 }

@@ -4,9 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vytauto Paskaitos</title>
+    <title>Flexbox ir Media praktika</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <main class="container">
+        <form action="/" method="GET">
+            <div class="input-layout">
+                <h3>Pirkėjo informacija</h3>
+                
+                <div class="input-list">
+                    <div class="input-group">
+                        <label for="name" class="form-label" >Vardas</label>
+                        <input type="text" id="name" name="name" class="form-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="name" class="form-label" >Pavardė</label>
+                        <input type="text" id="lastname" name="lastname" class="form-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="name" class="form-label" >Gatvė</label>
+                        <input type="text" id="street" name="street" class="form-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="name" class="form-label" >Miestas</label>
+                        <input type="text" id="city" name="city" class="form-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="name" class="form-label" >Namo Nr.</label>
+                        <input type="text" id="houseNo" name="houseNo" class="form-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="name" class="form-label" >Pašto kodas</label>
+                        <input type="text" id="zip" name="zip" class="form-input">
+                    </div>
+                </div>
     
+                <button>Saugoti</button>
+            </div>
+        </form>
+    </main>
 </body>
 </html>
