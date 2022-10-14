@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
     height: 100%;
@@ -12,12 +16,14 @@ body {
     grid-template-columns: 240px auto;
     grid-template-rows: 186px auto;
     height: 100%;
+    background-color: #F5F5F5;
 }
 
 .navigation {
     grid-area: navigation;
-    background-color: aqua;
+    background-color: white;
     display: flex;
+    border-radius: 20px;
     flex-direction: column;
     padding: 40px 26px;
 
@@ -35,6 +41,7 @@ body {
     text-decoration: none;
     color: grey;
     padding: 0 18px;
+    font-size: 14px;
 }
 
 .navigation__link-list img {
@@ -55,13 +62,163 @@ body {
     color: rgba(27, 89, 248, 1);
 }
 
+.navigation__link-image {
+    height: 28px;
+    width: 28px;
+    background-color: grey;
+    mask: url(/vector/Vector.svg) no-repeat center / contain;
+    -webkit-mask: url(/vector/Vector.svg) no-repeat center / contain;
+}
+
 .navigation__link-list span {
     margin-left: 18px;
 }
 
+h5 {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+}
+
+.navigation__account {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #E5E5E5;
+    gap: 5px;
+    padding-left: 20px;
+}
+
+.account-photo {
+    width: 34px;
+    height: 34px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.account-name {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.account-email {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+}
+
 .header {
     grid-area: header;
-    background-color: lightcoral;
+}
+
+.header-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 98px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-left: 44px;
+    margin-right: 50px;
+    gap: 32px;
+    justify-content: space-between;
+
+
+}
+
+.header-menu {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0F2F5;
+    border-radius: 12px;
+    padding: 3px;
+    gap: 10px;
+}
+
+.header-top-main {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+}
+
+.header-menu-button {
+    display: block;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-decoration: none;
+}
+
+.header-menu-button-active {
+    color: rgba(27, 89, 248, 1);
+    background-color: #FFFFFF;
+    border: 1px solid #F0F2F5;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.header-button {
+    color: rgba(27, 89, 248, 1);
+    background-color: #FFFFFF;
+    border: 1px solid #F0F2F5;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 14px;
+}
+
+.icon-plus {
+    display: inline-block;
+    background-color: rgba(27, 89, 248, 1);
+    width: 10px;
+    height: 10px;
+    -webkit-mask: url(./vector/plus-solid.svg) no-repeat center / contain;
+    mask: url(./vector/plus-solid.svg) no-repeat center / contain;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 44px;
+    margin-right: 50px;
+    height: 98px;
+}
+
+.header-search,
+.header-list {
+    color: rgba(73, 73, 73, 1);
+    border: none;
+    background-color: transparent;
+    font-size: 17px;
+}
+
+.icon-search {
+    display: inline-block;
+    background-color: rgba(73, 73, 73, 1);
+    color: rgba(73, 73, 73, 1);
+    width: 12px;
+    height: 12px;
+    -webkit-mask: url(./vector/search-solid.svg) no-repeat center / contain;
+    mask: url(./vector/search-solid.svg) no-repeat center / contain;
+    padding-right: 32px;
+}
+
+.icon-list {
+    display: inline-block;
+    background-color: rgba(73, 73, 73, 1);
+    color: rgba(73, 73, 73, 1);
+    width: 12px;
+    height: 12px;
+    -webkit-mask: url(./vector/list-solid.svg) no-repeat center / contain;
+    mask: url(./vector/list-solid.svg) no-repeat center / contain;
+    padding-right: 32px;
 }
 
 .content {
