@@ -240,7 +240,8 @@ h5 {
     border-radius: 18px;
 } */
 
-.card-new {
+.card-new,
+.card-course {
     text-decoration: none;
     display: flex;
     flex-direction: column;
