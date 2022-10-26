@@ -277,6 +277,35 @@ h5 {
 
 }
 
+.card__background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card .card__title {
+    flex: 1;
+    color: white;
+    line-height: 100%;
+}
+
+.card__menu {
+    height: 6px;
+    width: 18px;
+    object-fit: cover;
+}
+
+.card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .card-content {
     font-size: 10px;
     color: rgb(0, 0, 0, 0.3);
