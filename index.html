@@ -123,6 +123,20 @@
         </section>
     </main>
 
+    @media screen and (max-width: 768px) {
+        .header {
+            display: none;
+        }
+    
+        .layout {
+            grid-template-areas: 
+            "navigation"
+            "h-content";
+            grid-template-columns: auto;
+            grid-template-rows: 114px;
+        }
+    }
+
 
 </body>
 
